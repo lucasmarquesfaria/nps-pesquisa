@@ -33,7 +33,7 @@ while ($row = $result->fetch_assoc()) {
 
 $conn->close();
 
-// Cálculo do NPS
+  // aqui se encontra calculo NPS o qual este mesmo foi passado ( calculo padrão seguindo ISO)
 $promoters = count(array_filter($scores, fn($score) => $score >= 9));
 $detractors = count(array_filter($scores, fn($score) => $score <= 6));
 $totalResponses = count($scores);

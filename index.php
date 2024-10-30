@@ -49,13 +49,10 @@
         </div>
     </div>
 
-    <div class="adm">
-        <button class="login">
-            
-        </button>
-    </div>
-
-
+    <footer class="text-center py-4 bg-gray-800 mt-12">
+        <p class="text-sm text-gray-400">&copy; 2024 Marques Developer. Todos os direitos reservados.</p>
+    </footer>
+    
     <script>
         function submitScore(score) {
             const xhr = new XMLHttpRequest();

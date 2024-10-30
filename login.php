@@ -1,9 +1,12 @@
 <?php
 session_start();
-
-// senhas login
-$valid_username = 'admin'; // Substitua pelo seu nome de usuário
-$valid_password = 'senha123'; // Substitua pela sua senha
+if (file_exists(__DIR__ . '/.env')) {
+    $env = parse_ini_file(__DIR__ . '/.env');
+    $valid_username = $env['VALID_USERNAME'];
+    $valid_password = $env['VALID_PASSWORD'];
+} else {
+    die('Erro: Arquivo .env não encontrado!');
+}
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $username = $_POST['username'];
