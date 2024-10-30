@@ -10,9 +10,9 @@ if (!isset($_SESSION['loggedin'])) {
 }
 
 $servername = "localhost";
-$username = "root"; // Altere conforme necessário
-$password = "lucas"; // Altere conforme necessário
-$dbname = "nps_db"; // Altere conforme necessário
+$username = "root";
+$password = "lucas"; 
+$dbname = "nps_db";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 

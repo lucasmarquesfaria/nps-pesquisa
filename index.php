@@ -49,6 +49,13 @@
         </div>
     </div>
 
+    <div class="adm">
+        <button class="login">
+            
+        </button>
+    </div>
+
+
     <script>
         function submitScore(score) {
             const xhr = new XMLHttpRequest();
@@ -63,5 +70,7 @@
             xhr.send("score=" + score);
         }
     </script>
+
+    <script src="script.js"></script>
 </body>
 </html>
