@@ -19,7 +19,7 @@ function submitScore(score) {
 
             setTimeout(function() {
                 window.location.href = "index.php"; 
-            }, 2000); 
+            }, 1009); 
         }
     };
     xhr.send("score=" + score);
