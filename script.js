@@ -20,6 +20,8 @@ function submitScore(score) {
             setTimeout(function() {
                 window.location.href = "index.php"; 
             }, 1009); 
+
+            
         }
     };
     xhr.send("score=" + score);
